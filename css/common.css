@@ -1,9 +1,17 @@
 @import url("fonts.css");
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
 body {
     background: url('../images/background.jpg');
     background-size: cover;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
+    padding-bottom: 70px;
 }
 /* Headers */
 
@@ -12,6 +20,7 @@ h1 {
     font-weight: 200;
     font-size: 56px;
     padding-bottom: 60px;
+    margin: 0;
 }
 /* Links */
 a,
@@ -94,8 +103,9 @@ a:active {
 }
 #viddyoze_header .viddyoze-logo {
     font-size: 130px;
-    height: 40px;
+    height: 60px;
     padding-left: 0;
+    padding-top: 20px;
 }
 #viddyoze_header nav {
 
@@ -317,4 +327,99 @@ a:active {
 }
 .color-picker-set .dropdown-menu > li > a:hover {
     background: black;
+}
+
+.configuration-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px !important;
+    font-size: 16px;
+    font-weight: 300;
+}
+.configuration-nav li a {
+    padding: 6px 20px 7px;
+    color: #333;
+    line-height: 1;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.configuration-nav li a .count {
+    color: #ccc;
+    margin-left: 5px;
+}
+.configuration-nav li a:hover {
+    color: #000;
+    background: #eee;
+}
+.configuration-nav li .icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.configuration-nav li.disabled {
+    opacity: .5;
+    padding-right: 15px;
+    margin-top: 13px;
+}
+.configuration-nav li.disabled.pull-right {
+    padding-right: 0;
+    text-align: right;
+    margin-right: 0 !important;
+    margin-top: 14px;
+}
+.configuration-nav {
+    overflow: hidden;
+    margin: 0 0 15px;
+    padding: 2px 25px 13px;
+    color: #999;
+}
+
+/* Let's style the labels */
+.custom-label {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1;
+}
+.custom-label img {
+    vertical-align: text-bottom;
+    position: relative;
+    top: -1px;
+}
+.custom-label:before,
+.custom-label.right-check:after {
+     font-family: "viddyoze" !important;
+     content: "j";
+     font-size: 20px;
+     vertical-align: middle;
+     line-height: 1;
+     font-weight: 300;
+     color: #666;
+     margin-right: 3px;
+     position: relative;
+     top: -1px;
+ }
+.custom-label.right-check:before,
+.custom-label.right-check.checked:before {
+    display: none;
+}
+.custom-label.right-check:after {
+    margin-left: 20px;
+}
+.custom-label.checked,
+.custom-label.checked:before {
+     content: "i";
+     color: #05A3FC;
+ }
+.custom-label.right-check.checked,
+.custom-label.right-check.checked:after {
+    content: "i";
+    color: #05A3FC;
+}
+.custom-label.right-check.checked .text-uppercase {
+    color: #05A3FC;
+}
+.custom-label input {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
 }

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="background-image">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My Videos - Viddyoze</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/private.css">
+</head>
+<body>
+<div id="viddyoze_wrapper">
+    <div id="viddyoze_header">
+        <a href="#" title="Viddyoze" class="viddyoze-logo icon-logo pull-left">
+            <span class="label">Viddyoze</span>
+        </a>
+
+        <div class="pull-right top-vid-nav">
+            <nav id="vid_nav">
+                <ul>
+                    <li>
+                        <a href="#" title="Create">
+                            <span class="icon icon-play"></span>
+                            Create
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="My movies" class="active">
+                            <span class="icon icon-movies"></span>
+                            My movies
+                            <small class="count">47 items</small>
+                        </a>
+                    </li>
+                </ul>
+            </nav> <!-- #vid_nav -->
+            <div class="user-area">
+                <a class="user-avatar" href="settings.html" title="My account">
+                    <span class="image">
+                        <img src="images/jessica.jpg" alt="Jessica" width="50" />
+                    </span>
+                    <span class="icon-settings"></span>
+                </a>
+            </div> <!-- .user-area -->
+        </div> <!-- .pull-left -->
+
+    </div> <!-- #viddyoze_header -->
+
+    <div class="container">
+        <h1>My Videos</h1>
+
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-md-9 col-centered col-video">
+
+                    <div class="videos-list item">
+                        <div class="content">
+
+                            <div class="my-videos">
+                                <ul class="configuration-nav nav-pills" role="tablist">
+
+                                    <li class="disabled"><span>Filter by:</span></li>
+                                    <li class="active"><a href="#all" data-toggle="tab" class="rounded">
+                                        All <span class="count">(47)</span></a></li>
+                                    <li><a href="#basic" data-toggle="tab" class="rounded">
+                                        Basic Reveal <span class="count">(22)</span></a></li>
+                                    <li><a href="#reveal" data-toggle="tab" class="rounded">
+                                        3D Reveal <span class="count">(17)</span></a></li>
+                                    <li><a href="#funky" data-toggle="tab" class="rounded">
+                                        Funky Animation <span class="count">(10)</span></a></li>
+                                </ul>
+                            </div> <!-- .my-videos -->
+
+                            <div class="tab-content text-left stack">
+                                <div class="tab-pane fade in active" id="all">
+                                    <div class="table-header">
+
+
+                                        <label class="custom-label pull-right right-check" for="select_all">
+                                            <span class="text-uppercase">Select all</span>
+                                            <input type="checkbox" name="item_00011" id="select_all" checked>
+                                        </label>
+
+                                        <a href="#" title="Delete all" class="pull-right text-uppercase delete-all" style="display: none">Delete all</a>
+
+                                        <h3><span class="icon-movies"></span> All videos</h3>
+
+                                    </div> <!-- .table-header -->
+
+
+                                    <ol class="videos-set">
+                                        <!-- item -->
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1">
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+
+                                        <!-- item -->
+                                        <li class="selected-row"> <!-- please add this class to select the row once the checkbox is checked -->
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1" checked>
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+
+                                        <!-- item -->
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1">
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+
+                                        <!-- item -->
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1">
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+
+                                        <!-- item -->
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1">
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+
+                                        <!-- item -->
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1">
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+
+                                        <!-- item -->
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1">
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+
+                                        <!-- item -->
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="thumb">
+                                                        <img src="holder.js/110x70" alt="Image" />
+                                                        <span class="duration">
+                                                            3:02
+                                                        </span>
+                                                    </div> <!-- .thumb -->
+                                                    <div class="data">
+                                                        <a href="#" title="Animation For A Cause" class="video-name">Animation For A Cause</a> <!-- video title -->
+                                                        <span class="video-date">Created:  8 Apr. 2015</span>
+                                                        <span class="video-formats">
+                                                            <span class="fa fa-cloud-download"></span>
+                                                            Download: &nbsp;
+                                                            <a href="#" title=".avi">.avi</a>
+                                                            <a href="#" title=".mpeg">.mpeg</a>
+                                                            <a href="#" title=".wmv">.wmv</a>
+                                                            <a href="#" title=".mov">.mov</a>
+                                                            <a href="#" title=".3gp">.3gp</a>
+                                                        </span> <!-- .video-formats -->
+                                                    </div> <!-- .data -->
+                                                </div> <!-- .col-md-7 -->
+
+                                                <div class="col-md-5">
+                                                    <div class="button-set">
+                                                        <a href="#" title="Edit" class="single-outline">Edit</a>
+                                                        <a href="#" title="Edit" class="single-outline vid-blue"><span class="icon-play"></span> Play</a>
+
+                                                        <label class="custom-label">
+                                                            <input type="checkbox" name="item_1">
+                                                        </label>
+
+                                                    </div> <!-- .button-set -->
+                                                </div> <!-- .col-md-5 -->
+
+                                            </div> <!-- .row -->
+                                        </li>
+                                    </ol> <!-- .videos-set -->
+
+                                    <div class="text-center">
+                                        <a href="#" title="Edit" class="single-outline load-more">Load more</a>
+                                    </div> <!-- .text-center -->
+
+                                </div> <!-- #all -->
+
+                                <div class="tab-pane fade in active" id="basic">
+
+                                </div> <!-- #all -->
+
+                                <div class="tab-pane fade in active" id="reveal">
+
+                                </div> <!-- #all -->
+
+                                <div class="tab-pane fade in active" id="funky">
+
+                                </div> <!-- #all -->
+                            </div> <!-- .tab-content -->
+
+                        </div> <!-- .content -->
+                    </div> <!-- .item -->
+                </div> <!-- .col-centered -->
+
+            </div> <!-- .row-centered -->
+        </div> <!-- .container -->
+
+
+
+
+    </div> <!-- .container -->
+
+</div> <!-- #viddyoze_wrapper -->
+
+<div class="overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.js"></script>
+</body>
+</html>

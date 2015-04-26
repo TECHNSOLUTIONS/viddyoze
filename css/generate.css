@@ -102,50 +102,21 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
     padding: 0 0 15px;
 }
-.configuration-nav li {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 15px !important;
-    font-size: 16px;
-    font-weight: 300;
-}
-.configuration-nav li a {
-    padding: 6px 20px 7px;
-    color: #999;
-    background: black;
-    line-height: 1;
-    display: inline-block;
-    margin-top: 10px;
-}
-.configuration-nav li a:hover {
-    color: white;
-}
-.configuration-nav li .icon {
-    vertical-align: middle;
-    margin-right: 5px;
-}
-.configuration-nav li.disabled {
-    opacity: .5;
-    padding-right: 15px;
-    margin-top: 13px;
-}
-.configuration-nav li.disabled.pull-right {
-    padding-right: 0;
-    text-align: right;
-    margin-right: 0 !important;
-    margin-top: 14px;
-}
 .configuration-nav {
     background: #212121;
     -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
-    overflow: hidden;
-    margin: 0 0 15px;
-    padding: 2px 25px 13px;
-    color: white;
+    color: #999;
 }
-
+.configuration-nav li a {
+    background: black;
+    color: #999;
+}
+.configuration-nav li a:hover {
+    color: white;
+    background: #333;
+}
 .video-configuration .tab-pane {
     padding: 0 27px;
     color: white;

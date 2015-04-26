@@ -65,3 +65,9 @@
 .icon-play-round:before {
     content: "h";
 }
+.icon-checked:before {
+    content: "i";
+}
+.icon-unchecked:before {
+    content: "j";
+}

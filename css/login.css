@@ -83,7 +83,7 @@ input {
 }
 .forgotten-link {
     position: absolute;
-    bottom: 85px;
+    bottom: 82px;
     right: 20px;
     z-index: 9000;
     color: #ccc;
@@ -162,6 +162,10 @@ input {
 /* Logo */
 .viddyoze-logo {
     color: white;
+    height: 70px;
+    padding-bottom: 0;
+    position: relative;
+    top: 20px;
 }
 
 .image-section {
