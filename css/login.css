@@ -5,7 +5,6 @@ html {
 body {
     background: url('../images/stripe.png');
     background-size: 3px;
-    font-family: "Helvetica Neue";
 }
 .vid-login {
     width: 360px;
@@ -21,7 +20,6 @@ body {
 }
 h2 {
     color: #7B7B7B;
-    font-family: "Helvetica Neue";
     font-size: 24px;
     font-weight: 700;
     margin: 0;
@@ -59,7 +57,7 @@ h2 {
     box-shadow: none;
 }
 input {
-    font-family: "Helvetica Neue";
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .vid-login h2 + .input-group .form-control {
     border-top: 0;
@@ -148,15 +146,6 @@ input {
     margin-top: -15px;
     margin-left: -15px;
 }
-.window-close {
-    color: #999;
-    font-size: 18px;
-    position: absolute;
-    right: 23px;
-    top: 23px;
-    z-index: 9000;
-}
-
 /* Secondary background image */
 .happy-people {
     position: fixed;
@@ -172,13 +161,7 @@ input {
 
 /* Logo */
 .viddyoze-logo {
-    font-size: 190px;
     color: white;
-    line-height: 1;
-    height: 49px;
-    position: relative;
-    z-index: 9800;
-    padding-left: 15px;
 }
 
 .image-section {

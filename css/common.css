@@ -1,15 +1,30 @@
 @import url("fonts.css");
-html, body {
-    height: 100%;
+body {
+    background: url('../images/background.jpg');
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
 }
+/* Headers */
 
+h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 56px;
+    padding-bottom: 60px;
+}
+/* Links */
 a,
 a:hover,
 a:focus,
 a:active {
     text-decoration: none;
+    color: #05a3fe;
 }
-
+.container {
+    clear: both;
+    padding: 0;
+}
 .overlay {
     background: black;
     opacity: 0.6;
@@ -25,8 +40,9 @@ a:active {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 15px;
+    padding: 16px 15px;
     font-weight: bold;
+    font-size: 18px;
 }
 .vid-button:hover,
 .vid-button:visited {
@@ -52,9 +68,9 @@ a:active {
     background: #e53122;
 }
 .rounded {
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
 }
 .rounded .fa {
     vertical-align: middle;
@@ -70,4 +86,235 @@ a:active {
 }
 .pill:hover {
     color: white;
+}
+
+/* Header */
+#viddyoze_header {
+    padding: 0 15px;
+}
+#viddyoze_header .viddyoze-logo {
+    font-size: 130px;
+    height: 40px;
+    padding-left: 0;
+}
+#viddyoze_header nav {
+
+}
+/* Logo */
+.viddyoze-logo {
+    font-size: 190px;
+    color: #373f47;
+    line-height: 1;
+    height: 49px;
+    position: relative;
+    z-index: 9800;
+    padding-left: 15px;
+    overflow: hidden;
+}
+.viddyoze-logo span {
+    text-indent: -9999px;
+    display: block;
+}
+.window-close {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    right: 23px;
+    top: 23px;
+    z-index: 9000;
+}
+
+/* Top navigation */
+.top-vid-nav * {
+    display: inline-block;
+    vertical-align: top;
+}
+.top-vid-nav li {
+    padding: 0 10px;
+}
+.top-vid-nav li a {
+    display: inline-block;
+    padding: 14px 12px;
+    border-top: 3px solid transparent;
+    font-size: 14px;
+    line-height: 1;
+    color: #666;
+}
+.top-vid-nav li a .icon {
+    font-size: 11px;
+    vertical-align: middle;
+}
+.top-vid-nav li a small {
+    font-size: 11px;
+    color: #999;
+    display: block;
+    padding-left: 22px;
+    line-height: 1;
+    margin-top: -2px;
+}
+.top-vid-nav li a .icon.icon-movies {
+    font-size: 17px;
+    position: relative;
+    top: -1px;
+}
+.top-vid-nav li a.active,
+.top-vid-nav li a.active:hover {
+    border-color: #000;
+    color: black;
+}
+.top-vid-nav li a:hover {
+    border-color: #eee;
+}
+.user-avatar {
+    padding-top: 4px;
+}
+.user-avatar .image {
+    border-radius: 50%;
+    border: 3px solid #eaeaea;
+    overflow: hidden;
+}
+.user-area * {
+    vertical-align: middle;
+}
+.user-area a {
+    color: black;
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+.user-area .image {
+    margin-right: 10px;
+}
+.user-area .icon-settings {
+    font-size: 18px;
+}
+.user-area .user-avatar {
+    color: #999;
+}
+.user-avatar:hover {
+    color: #333;
+}
+.user-avatar:hover .image {
+    border-color: #333;
+}
+
+/* Customizing the tabs */
+.selection-tabs {
+    text-align: center;
+    border: 0;
+}
+.selection-tabs > li {
+    display: inline-block;
+    float: none;
+    margin: 0 10px;
+}
+.selection-tabs > li > a {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    padding: 10px 40px;
+    font-weight: 700;
+    color: #666;
+    width: 210px;
+}
+.selection-tabs > li > a:hover {
+    background: rgba(255, 255, 255, .5);
+    border-color: transparent transparent white;
+}
+.selection-tabs > li.active > a,
+.selection-tabs > li.active > a:focus,
+.selection-tabs > li.active > a:hover {
+    background: none;
+    color: black;
+    border-color: transparent transparent black;
+    border-bottom-width: 4px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display: inline-block;
+    float: none;
+    text-align: left;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.col-fixed {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+[class*="col-"] {
+    padding-top:10px;
+    padding-bottom:15px;
+}
+.item {
+    width:100%;
+    height: 310px;
+    background-color: #363E47;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding:16px 8px;
+    position: relative;
+}
+.item .vid-button {
+    position: absolute;
+    padding: 11px 15px;
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    bottom: -20px;
+    left: 25px;
+    right: 25px;
+}
+/* content styles */
+.item, .preview-box {
+    display:table;
+}
+.item-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.item-header .icon-play {
+    font-size: 12px;
+    vertical-align: middle;
+}
+.content {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #059ce6;
+}
+
+.color-picker-set * {
+    border: 0;
+    background: none;
+}
+.color-picker-set .selected-element-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    color: white;
+}
+.color-picker-set {
+    border-bottom: 3px solid black;
+}
+.color-picker-set.input-group .form-control {
+    box-shadow: none;
+}
+.color-picker-set .dropdown-menu > li > a {
+    color: white;
+    padding-left: 33px;
+}
+.color-picker-set .dropdown-menu > li > a:hover {
+    background: black;
 }
