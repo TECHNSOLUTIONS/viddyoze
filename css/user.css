@@ -147,3 +147,22 @@
 .image-upload .single-outline {
     margin-left: 0;
 }
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .form-set {
+        padding: 0 40px;
+    }
+    .panel-head {
+        padding-left: 40px;
+        font-weight: 700;
+        color: #333;
+    }
+    .user-area {
+        display: none;
+    }
+    .top-vid-nav {
+        float: none !important;
+        margin-left: 100px;
+    }
+}
