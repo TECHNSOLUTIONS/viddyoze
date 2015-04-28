@@ -244,14 +244,3 @@
 .no-padd {
     padding: 0 !important;
 }
-
-.build-video {
-    text-align: center;
-    width: 330px;
-    margin: 30px auto 60px;
-}
-.build-video span {
-    display: block;
-    padding-bottom: 15px;
-    color: #999;
-}

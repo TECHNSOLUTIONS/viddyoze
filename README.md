@@ -8,8 +8,10 @@ Step 2: http://www.vladmihai.com/viddyoze/step2.html
 
 My videos: http://www.vladmihai.com/viddyoze/my-videos.html
 
+My account: http://www.vladmihai.com/viddyoze/user.html
+
+First time tour: http://www.vladmihai.com/viddyoze/step1-tutorial.html
+
 In progress:
 
-1. My account page
-2. First time tour
 3. Responsive design fixes

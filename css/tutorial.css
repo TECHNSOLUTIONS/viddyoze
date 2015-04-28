@@ -1,0 +1,57 @@
+.tutorial-box {
+    position: absolute;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    padding: 15px 25px 25px;
+    border-radius: 5px;
+    text-align: left;
+}
+.tutorial-box:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    bottom: -16px;
+    left: 50%;
+    box-sizing: border-box;
+    border: 8px solid black;
+    border-color: transparent transparent #fff #fff;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.tutorial-box .actions {
+    padding-top: 15px;
+}
+.tutorial-box .actions .single-outline {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.tutorial-box p {
+    color: #666;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    padding-top: 4px;
+}
+.disabled-step-count {
+    font-weight: 700;
+    color: #ccc;
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+    font-size: 11px;
+}
+.tutorial-circle {
+    background: rgba(0,0,0,.2);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 71px;
+    top: -14px;
+}
