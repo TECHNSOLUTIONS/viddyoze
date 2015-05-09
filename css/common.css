@@ -218,6 +218,17 @@ a:active {
 .user-area .user-avatar {
     color: #999;
 }
+.user-area .logout {
+    color: #999;
+    margin: -5px 5px;
+    font-size: 17px;
+    vertical-align: text-bottom;
+    position: relative;
+    top: -1px;
+}
+.user-area .logout:hover {
+    color: #e54245;
+}
 .user-avatar:hover {
     color: #333;
 }
