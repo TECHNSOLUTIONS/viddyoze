@@ -591,5 +591,15 @@ a.single-outline.load-more:hover {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-
+    #viddyoze_header nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    #viddyoze_header .viddyoze-logo {
+        margin: 15px auto 0;
+        display: block;
+        float: none !important;
+        text-align: center;
+        padding-top: 0;
+    }
 }

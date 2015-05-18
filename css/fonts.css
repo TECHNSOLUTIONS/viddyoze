@@ -71,3 +71,6 @@
 .icon-unchecked:before {
     content: "j";
 }
+.icon-text:before {
+    content: "k";
+}
