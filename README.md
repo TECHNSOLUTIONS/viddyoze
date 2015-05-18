@@ -11,7 +11,3 @@ My videos: http://www.vladmihai.com/viddyoze/my-videos.html
 My account: http://www.vladmihai.com/viddyoze/user.html
 
 First time tour: http://www.vladmihai.com/viddyoze/step1-tutorial.html
-
-In progress:
-
-3. Responsive design fixes
