@@ -69,6 +69,9 @@
     color: #000;
     border-bottom: 1px solid black;
 }
+.videos-set.rendering-videos .thumb {
+    opacity: .3;
+}
 .configuration-nav {
     padding: 2px 40px 13px;
 }
@@ -134,4 +137,37 @@
 }
 .table-header .delete-all:hover {
     border-bottom: 1px solid #e54245;
+}
+
+.submenu-nav {
+    text-align: center;
+}
+.submenu-nav .configuration-nav {
+    margin: 2px auto 13px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Loading bar */
+.render-progress {
+    width: 100px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #f1f1f1;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+}
+.render-progress .rendered {
+    display: block;
+    height: 10px;
+    background: #FF99B8;
+}
+
+/* Quikc fix */
+h3 .icon-movies {
+    position: relative;
+    top: 4px;
 }
