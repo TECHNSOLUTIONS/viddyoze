@@ -69,7 +69,7 @@
     color: #000;
     border-bottom: 1px solid black;
 }
-.videos-set.rendering-videos .thumb {
+.rendering-videos .thumb {
     opacity: .3;
 }
 .configuration-nav {
