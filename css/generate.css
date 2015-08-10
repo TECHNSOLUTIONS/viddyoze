@@ -48,9 +48,12 @@
 }
 .choices .art {
     position: absolute;
-    top: 25px;
+    top: 0;
     left: 0;
     right: 0;
+    background-color: #646694;
+    height: 220px;
+    border-radius: 9px 9px 0 0;
 }
 .choices .art + p {
     position: absolute;
