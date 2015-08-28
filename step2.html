@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html class="background-image">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Create your own - Step 1 - Viddyoze</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/generate.css">
+
+    <!-- loading the color picker for this page only -->
+    <link rel="stylesheet" href="css/jquery.ui.colorPicker.css">
+</head>
+<body>
+<div id="viddyoze_wrapper">
+    <div id="viddyoze_header">
+        <a href="#" title="Viddyoze" class="viddyoze-logo icon-logo pull-left">
+            <span class="label">Viddyoze</span>
+        </a>
+
+        <div class="pull-right top-vid-nav">
+            <nav id="vid_nav">
+                <ul>
+                    <li>
+                        <a href="step1.html" title="Create" class="active">
+                            <span class="icon icon-play"></span>
+                            Create
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-videos.html" title="My movies">
+                            <span class="icon icon-movies"></span>
+                            My movies
+                            <small class="count">47 items</small>
+                        </a>
+                    </li>
+                </ul>
+            </nav> <!-- #vid_nav -->
+            <div class="user-area">
+                <a class="user-avatar" href="user.html" title="My account">
+                    <span class="image">
+                        <img src="images/jessica.jpg" alt="Jessica" width="50" />
+                    </span>
+                    <span class="icon-settings"></span>
+                </a>
+
+                <!-- Logout link -->
+                <a href="login.html" title="Logout" class="logout">
+                    <span class="fa fa-power-off"></span>
+                </a>
+
+            </div> <!-- .user-area -->
+
+        </div> <!-- .pull-left -->
+
+    </div> <!-- #viddyoze_header -->
+
+    <div class="container">
+        <div class="steps">
+            <div class="step active">
+                <span class="count">1</span>
+                <span class="info">Select</span>
+            </div> <!-- .count -->
+
+            <div class="highway"></div>
+
+            <div class="step active">
+                <span class="count">2</span>
+                <span class="info">Customize</span>
+            </div> <!-- .count -->
+
+            <div class="highway"></div>
+
+            <div class="step">
+                <span class="count">3</span>
+                <span class="info">Download</span>
+            </div> <!-- .count -->
+        </div> <!-- .steps -->
+
+        <h1>Customize your video</h1>
+
+
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-md-9 col-centered col-video">
+
+                    <div class="preview-box item">
+                        <div class="content">
+
+
+                            <!-- Video frame -->
+                            <div id="video_frame" class="video-frame">
+                                <span class="icon-movies"></span>
+                            </div> <!-- video-frame -->
+
+                            <!-- Starting configuration tabs -->
+                            <div class="video-configuration">
+                                <!-- Nav tabs -->
+                                <ul class="configuration-nav nav-pills" role="tablist">
+
+                                    <li class="disabled pull-right"><span class="icon icon-play"></span> Estimated: 00:33m</li>
+
+                                    <!-- <li class="disabled"><span>Customization options:</span></li> -->
+                                    <li class="active"><a href="#images" data-toggle="tab" class="rounded">
+                                        <span class="icon icon-images"></span>
+                                        Images</a></li>
+                                    <li><a href="#texts" data-toggle="tab" class="rounded">
+                                        <span class="icon icon-text"></span>
+                                        Text</a></li>
+                                    <li><a href="#colors" data-toggle="tab" class="rounded">
+                                        <span class="icon icon-drop"></span>
+                                        Colors</a></li>
+                                    <li><a href="#finalize" data-toggle="tab" class="rounded">
+                                        <span class="icon icon-play-round"></span>
+                                        Finalize</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content text-left">
+                                    <div class="tab-pane active" id="images">
+                                        <h3>Replace the graphics</h3>
+
+                                        <div class="row image-settings">
+                                            <!-- first image -->
+                                            <div class="col-md-12">
+                                                <div class="image uploaded pull-left"> <!-- .uploaded needs to be removed if there's no image in this container -->
+
+                                                </div> <!-- .image -->
+                                                <div class="image-actions">
+                                                    <h4>Replace the logo</h4>
+                                                    <a href="#" title="Upload" class="input-trigger text-uppercase">Upload</a>
+                                                    <!-- after the upload has completed -->
+                                                    <small class="fa fa-check-circle done text-uppercase"> Done</small>
+
+                                                    <a href="#" title="Delete" class="icon-close"></a>
+                                                </div> <!-- .image-actions -->
+                                            </div> <!-- .col-md-12 -->
+
+                                            <!-- first image -->
+                                            <div class="col-md-12">
+                                                <div class="image uploaded pull-left">
+
+                                                </div> <!-- .image -->
+                                                <div class="image-actions">
+                                                    <h4>Replace the main image</h4>
+                                                    <a href="#" title="Upload" class="input-trigger text-uppercase">Upload</a>
+
+                                                    <a href="#" title="Delete" class="icon-close"></a>
+                                                </div> <!-- .image-actions -->
+                                            </div> <!-- .col-md-12 -->
+
+                                            <!-- first image -->
+                                            <div class="col-md-12">
+                                                <div class="image uploaded pull-left">
+
+                                                </div> <!-- .image -->
+                                                <div class="image-actions">
+                                                    <h4>Replace the background</h4>
+                                                    <a href="#" title="Upload" class="input-trigger text-uppercase">Upload</a>
+
+                                                    <a href="#" title="Delete" class="icon-close"></a>
+                                                </div> <!-- .image-actions -->
+                                            </div> <!-- .col-md-12 -->
+                                        </div> <!-- .row -->
+
+                                    </div> <!-- #images -->
+
+                                    <!-- Added texts tab -->
+
+                                    <div class="tab-pane" id="texts">
+                                        <h3>Texts</h3>
+
+                                        <div class="row image-settings">
+
+                                            <div class="col-md-12">
+                                                <div class="image-actions text-actions no-padd no-margin">
+                                                    <h4>Text item #1</h4>
+
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Text will go here - this is a placeholder">
+                                                          <span class="input-group-btn">
+                                                            <button class="btn btn-default" type="button">Save</button>
+                                                          </span>
+                                                    </div> <!-- .input-group -->
+
+                                                    <a href="#" title="Delete" class="icon-close"></a>
+                                                </div> <!-- .image-actions -->
+                                            </div> <!-- .col-md-12 -->
+
+
+                                            <div class="col-md-12">
+                                                <div class="image-actions text-actions no-padd no-margin">
+                                                    <h4>Text item #2</h4>
+
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Text will go here - this is a placeholder">
+                                                          <span class="input-group-btn">
+                                                            <button class="btn btn-default" type="button">Save</button>
+                                                          </span>
+                                                    </div> <!-- .input-group -->
+
+                                                    <a href="#" title="Delete" class="icon-close"></a>
+                                                </div> <!-- .image-actions -->
+                                            </div> <!-- .col-md-12 -->
+
+
+                                            <div class="col-md-12">
+                                                <div class="image-actions text-actions no-padd no-margin">
+                                                    <h4>Text item #3</h4>
+
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Text will go here - this is a placeholder">
+                                                          <span class="input-group-btn">
+                                                            <button class="btn btn-default" type="button">Save</button>
+                                                          </span>
+                                                    </div> <!-- .input-group -->
+
+                                                    <a href="#" title="Delete" class="icon-close"></a>
+                                                </div> <!-- .image-actions -->
+                                            </div> <!-- .col-md-12 -->
+
+
+                                            <div class="col-md-12">
+                                                <div class="image-actions text-actions no-padd no-margin">
+                                                    <h4>Text item #3</h4>
+
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Text will go here - this is a placeholder">
+                                                          <span class="input-group-btn">
+                                                            <button class="btn btn-default" type="button">Save</button>
+                                                          </span>
+                                                    </div> <!-- .input-group -->
+
+                                                    <a href="#" title="Delete" class="icon-close"></a>
+                                                </div> <!-- .image-actions -->
+                                            </div> <!-- .col-md-12 -->
+                                </div> <!-- .row -->
+
+                            </div> <!-- #images -->
+
+                                    <div class="tab-pane" id="colors">
+                                        <h3>Play with the colors</h3>
+
+                                        <div class="presets-block row">
+
+                                            <div class="col-md-6">
+
+                                                <div class="row">
+
+                                                    <div class="small-title text-uppercase">
+                                                        Color presets
+                                                    </div> <!-- .small-title -->
+
+                                                    <ul class="color-presets col-xs-6">
+                                                        <li class="preset selected">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #ab8fbd"></span>
+                                                                <span class="color" style="background-color: #736C8A;"></span>
+                                                                <span class="color" style="background-color: #F2F2F2;"></span>
+                                                                <span class="color" style="background-color: #C74949;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #2E668A;"></span>
+                                                                <span class="color" style="background-color: #D8CDC0;"></span>
+                                                                <span class="color" style="background-color: #725A47;"></span>
+                                                                <span class="color" style="background-color: #BB4E2D;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #F0D5F7;"></span>
+                                                                <span class="color" style="background-color: #3BA9C0;"></span>
+                                                                <span class="color" style="background-color: #3CB0BE;"></span>
+                                                                <span class="color" style="background-color: #83617A;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #87A9BE;"></span>
+                                                                <span class="color" style="background-color: #74A655;"></span>
+                                                                <span class="color" style="background-color: #6F7357;"></span>
+                                                                <span class="color" style="background-color: #A0A679;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #0E0F24;"></span>
+                                                                <span class="color" style="background-color: #F2F2F2;"></span>
+                                                                <span class="color" style="background-color: #EEA164;"></span>
+                                                                <span class="color" style="background-color: #ED2D36;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                    </ul> <!-- .color-presets -->
+
+
+                                                    <ul class="color-presets col-xs-6">
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #ab8fbd"></span>
+                                                                <span class="color" style="background-color: #736C8A;"></span>
+                                                                <span class="color" style="background-color: #F2F2F2;"></span>
+                                                                <span class="color" style="background-color: #C74949;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #2E668A;"></span>
+                                                                <span class="color" style="background-color: #D8CDC0;"></span>
+                                                                <span class="color" style="background-color: #725A47;"></span>
+                                                                <span class="color" style="background-color: #BB4E2D;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #F0D5F7;"></span>
+                                                                <span class="color" style="background-color: #3BA9C0;"></span>
+                                                                <span class="color" style="background-color: #3CB0BE;"></span>
+                                                                <span class="color" style="background-color: #83617A;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #87A9BE;"></span>
+                                                                <span class="color" style="background-color: #74A655;"></span>
+                                                                <span class="color" style="background-color: #6F7357;"></span>
+                                                                <span class="color" style="background-color: #A0A679;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                        <li class="preset">
+                                                            <span class="pallete">
+                                                                <span class="color" style="background-color: #0E0F24;"></span>
+                                                                <span class="color" style="background-color: #F2F2F2;"></span>
+                                                                <span class="color" style="background-color: #EEA164;"></span>
+                                                                <span class="color" style="background-color: #ED2D36;"></span>
+                                                            </span> <!-- pallete -->
+
+                                                            <!-- this <a> applies the preset -->
+                                                            <a href="#" title="Toggle"><span class="fa fa-check-circle"></span></a>
+                                                        </li> <!-- preset -->
+
+                                                    </ul> <!-- .color-presets -->
+
+                                                </div> <!-- .row -->
+
+                                            </div> <!-- .col-md-6 -->
+
+
+
+                                            <div class="col-md-6 custom-colors">
+
+                                                <div class="row">
+
+                                                    <div class="small-title text-uppercase">
+                                                        Custom
+                                                    </div> <!-- .small-title -->
+
+                                                    <div class="col-md-5 no-padd">
+
+                                                        <div class="input-group color-picker-set">
+                                                            <span class="input-group-addon no-padd">
+                                                                <span class="selected-element-color" style="background-color: #ff99ee">&nbsp;</span>
+                                                            </span>
+
+                                                            <span class="form-control" id="element_value">Element name</span>
+                                                            <span class="input-group-addon no-padd" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                <span class="fa fa-caret-down"></span>
+                                                            </span>
+
+                                                            <ul class="dropdown-menu" role="menu">
+                                                                <li><a href="#">Background</a></li>
+                                                                <li><a href="#">Logo</a></li>
+                                                                <li><a href="#">Border</a></li>
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div> <!-- .col-md-5 -->
+                                                    <div class="col-md-7">
+                                                        <input type="text" id="wheel" class="form-control" data-control="wheel" value="#ff99ee">
+                                                    </div> <!-- .col-md-7 -->
+                                                </div> <!-- .row -->
+
+
+
+                                            </div> <!-- .custom-colors -->
+
+                                        </div> <!-- .presets-block -->
+                                    </div> <!-- #colors -->
+
+                                    <div class="tab-pane" id="finalize">
+                                        <h3>Oh well...</h3>
+
+
+                                    </div> <!-- #finalize -->
+
+                                </div> <!-- .tab-content -->
+
+                            </div> <!-- .video-configuration -->
+
+                        </div> <!-- .content -->
+                    </div> <!-- .item -->
+                </div> <!-- .col-centered -->
+
+            </div> <!-- .row-centered -->
+        </div> <!-- .container -->
+
+
+        <div class="confirm-bottom">
+            <span class="text-uppercase">Whenever you’re ready</span>
+            <a href="#" class="vid-blue vid-button rounded text-uppercase">Build video</a>
+        </div> <!-- .build-video -->
+
+
+    </div> <!-- .content -->
+</div> <!-- #viddyoze_wrapper -->
+
+    <div class="overlay"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.minicolors.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            var colpick = $('#wheel').each( function() {
+                $(this).minicolors({
+                    control: $(this).attr('data-control') || 'hue',
+                    inline: 'true',
+                    letterCase: 'lowercase',
+                    opacity: false,
+                    change: function(hex, opacity) {
+                        if(!hex) return;
+                        if(opacity) hex += ', ' + opacity;
+                        try {
+                            console.log(hex);
+                        } catch(e) {}
+                        $(this).select();
+                        $('.selected-element-color').css('background-color', hex);
+                    },
+                    theme: 'bootstrap'
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>

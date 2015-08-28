@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="background-image">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My Account - Viddyoze</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+<div id="viddyoze_wrapper">
+    <div id="viddyoze_header">
+        <a href="#" title="Viddyoze" class="viddyoze-logo icon-logo pull-left">
+            <span class="label">Viddyoze</span>
+        </a>
+
+        <div class="pull-right top-vid-nav">
+            <nav id="vid_nav">
+                <ul>
+                    <li>
+                        <a href="step1.html" title="Create">
+                            <span class="icon icon-play"></span>
+                            Create
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-videos.html" title="My movies">
+                            <span class="icon icon-movies"></span>
+                            My movies
+                            <small class="count">47 items</small>
+                        </a>
+                    </li>
+                </ul>
+            </nav> <!-- #vid_nav -->
+            <div class="user-area">
+                <a class="user-avatar active" href="user.html" title="My account">
+                    <span class="image">
+                        <img src="images/jessica.jpg" alt="Jessica" width="50" />
+                    </span>
+                    <span class="icon-settings"></span>
+                </a>
+
+                <!-- Logout link -->
+                <a href="login.html" title="Logout" class="logout">
+                    <span class="fa fa-power-off"></span>
+                </a>
+
+            </div> <!-- .user-area -->
+
+        </div> <!-- .pull-left -->
+
+    </div> <!-- #viddyoze_header -->
+
+    <div class="container">
+
+        <div class="user-shot">
+            <span class="image">
+                <img src="images/jessica.jpg" alt="Jessica" width="130" />
+            </span> <!-- .image -->
+            <a href="#" title="Delete image" class="icon-close delete-image"></a>
+            <a href="#" title="Replace image" class="fa fa-plus-circle replace-image" data-toggle="modal" data-target="#edit_image"></a>
+        </div> <!-- .user-shot -->
+
+        <h1>Jessica's account</h1>
+
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-md-9 col-centered col-video">
+
+                    <div class="shadow-block item">
+                        <div class="content">
+
+                            <div class="row">
+                                <div class="col-md-6 first-set">
+                                    <div class="panel-head">Account settings</div>
+
+                                    <div class="form-set">
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Username</label>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-user"></span>
+                                            </span>
+                                            <input type="text" class="form-control" value="jessy.a" disabled>
+
+                                            <span title="Need help?" class="input-addon text-uppercase">Cannot be changed</span>
+
+                                        </div> <!-- .input-group -->
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Name</label>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-star"></span>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your name" value="Jessica Alba">
+
+                                            <a href="#" title="Need help?" class="input-addon text-uppercase">Edit</a>
+
+                                        </div> <!-- .input-group -->
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Email</label>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-envelope"></span>
+                                            </span>
+                                            <input type="email" class="form-control" placeholder="Your email address">
+
+                                            <a href="#" title="Need help?" class="input-addon text-uppercase">Edit</a>
+
+                                        </div> <!-- .input-group -->
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Password</label>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-lock"></span>
+                                            </span>
+                                            <input type="password" class="form-control" placeholder="Password">
+
+                                            <a href="#" title="Need help?" class="input-addon text-uppercase"><span class="icon-close"></span></a>
+                                            <!-- when the field is focused we repalce the "Edit" with the "Close", which cancels the focus state -->
+
+                                        </div> <!-- .input-group -->
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Repeat password</label>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-lock"></span>
+                                            </span>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div> <!-- .input-group -->
+
+                                    </div> <!-- .form-set -->
+
+                                </div> <!-- .col-md-6 -->
+
+
+                                <div class="col-md-6">
+                                    <div class="panel-head">Video settings</div>
+
+                                    <div class="form-set">
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Default video quality</label>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-video-camera"></span>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Video quality" value="High (HD 720p)">
+
+                                            <span title="More?" class="input-addon fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></span>
+
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">#quality 1</a></li>
+                                                <li><a href="#">#quality 2</a></li>
+                                                <li><a href="#">#quality 3</a></li>
+                                                <li><a href="#">#quality 4</a></li>
+                                            </ul>
+
+                                        </div> <!-- .input-group -->
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Default download format</label>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-file"></span>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Download format" value=".3gp">
+
+                                            <span title="More?" class="input-addon fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></span>
+
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">#quality 1</a></li>
+                                                <li><a href="#">#quality 2</a></li>
+                                                <li><a href="#">#quality 3</a></li>
+                                                <li><a href="#">#quality 4</a></li>
+                                            </ul>
+
+                                        </div> <!-- .input-group -->
+
+
+                                        <div class="input-group input-group-lg">
+                                            <label class="big-label">Receive news?</label>
+
+                                            <label class="custom-label" style="margin-top: 30px">
+                                                <input type="checkbox" name="item_1">
+
+                                                Notify me on my email about what’s hot
+
+                                            </label>
+
+                                        </div> <!-- .input-group -->
+
+
+                                    </div> <!-- .form-set -->
+
+                                </div> <!-- .col-md-6 -->
+
+                            </div> <!-- .row -->
+
+
+                        </div> <!-- .content -->
+                    </div> <!-- .item -->
+
+                    <div class="confirm-bottom">
+                        <a href="#" class="vid-blue vid-button rounded text-uppercase">SAVE YOUR SETTINGS</a>
+                        <a href="#" class="vid-white vid-button rounded text-uppercase">SAVE YOUR SETTINGS</a>
+                    </div> <!-- .build-video -->
+
+                </div> <!-- .col-centered -->
+
+            </div> <!-- .row-centered -->
+        </div> <!-- .container -->
+
+
+
+
+    </div> <!-- .container -->
+
+</div> <!-- #viddyoze_wrapper -->
+
+
+
+<div class="modal fade" id="edit_image">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="icon-close"></span>
+                </button>
+                <div class="panel-head">Replace your avatar</div>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="image-placeholder"></div>
+                    </div> <!-- .col-md-2 -->
+                    <div class="col-md-8 image-upload">
+                        Drag and position your image to crop it
+                        <br /><br />
+                        <a href="#" title="Upload image" class="single-outline">Upload image</a>
+                    </div> <!-- .col-md-8 -->
+                </div> <!-- .row -->
+
+            </div> <!-- .modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary vid-button vid-blue rounded full-button text-uppercase">Update image</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+.user-area a.active .image {
+    border-color: #333;
+}
+.user-shot {
+    margin: 0 auto 30px;
+    position: relative;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+}
+.user-shot .image {
+    border-radius: 50%;
+    overflow: hidden;
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+
+}
+.user-shot .delete-image {
+    border-radius: 50%;
+    color: #999;
+    background: white;
+    width: 30px;
+    height: 30px;
+    line-height: 34px;
+    display: block;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.user-shot .replace-image {
+    font-size: 40px;
+    color: #98c922;
+    position: absolute;
+    right: -18px;
+    top: 45px;
+    background: white;
+    border-radius: 50%;
+}
+.form-set {
+    padding: 0 40px 0 0;
+}
+.first-set .form-set,
+.first-set .panel-head {
+    padding-left: 40px;
+}
+.form-set .input-group {
+    margin-top: 30px;
+    text-align: left;
+}
+.form-set .input-group .form-control {
+    border-top: 0;
+    border-bottom: 4px solid #e3e3e3;
+    padding-left: 40px;
+    padding-top: 26px;
+}
+.form-set .input-group .form-control:focus {
+    border-bottom-color: #333;
+}
+.form-set .input-group .big-label {
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+.form-set .input-group .input-group-addon {
+    padding-left: 0 !important;
+    top: 15px;
+}
+.form-set .input-group .input-addon {
+    position: absolute;
+    right: 10px;
+    bottom: 22px;
+    font-size: 15px;
+    z-index: 85;
+    color: #ccc;
+}
+.form-set .input-group a.input-addon:hover {
+    color: #333;
+    border-bottom: 1px solid #333;
+    margin-bottom: -1px;
+}
+.form-set .input-group .dropdown-toggle {
+    font-size: 17px;
+    cursor: pointer;
+}
+.form-set .input-group .dropdown-toggle + .dropdown-menu {
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+    padding: 10px 18px;
+    clear: both;
+    color: #333;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+}
+.modal-backdrop {
+    background: white;
+}
+.modal-content {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    border: 0;
+}
+.modal-header {
+     padding: 20px 30px;
+    border: 0;
+ }
+.modal-header .close {
+     margin: 7px 0;
+}
+.modal-body {
+    padding: 10px 30px 30px;
+}
+.modal-content .vid-button {
+    border: 0;
+    padding: 7px 30px;
+    font-size: 15px;
+    float: right;
+}
+.image-placeholder {
+    border-radius: 50%;
+    border: 1px dashed #999;
+    width: 130px;
+    height: 130px;
+    display: block;
+    vertical-align: top;
+}
+.image-upload {
+    padding-left: 30px;
+    padding-top: 35px;
+    vertical-align: top;
+}
+.image-upload .single-outline {
+    margin-left: 0;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .form-set {
+        padding: 0 40px;
+    }
+    .panel-head {
+        padding-left: 40px;
+        font-weight: 700;
+        color: #333;
+    }
+    .user-area {
+        display: none;
+    }
+    .top-vid-nav {
+        float: none !important;
+        margin-left: 100px;
+    }
+}
