@@ -568,6 +568,50 @@ a.single-outline.load-more:hover {
     font-weight: 300;
 }
 
+.secondary-section-header {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+}
+.secondary-section-header span {
+    font-size: 18px;
+    display: block;
+    padding-bottom: 15px;
+}
+.faq-section {
+    text-align: left;
+    padding: 20px 30px 0;
+}
+.faq-section h4 {
+    font-weight: 700;
+}
+.panel-default > .panel-heading {
+    background-color: #f8f8f8;
+    border-color: #fff;
+    border-radius: 5px;
+}
+.panel-group .panel {
+    box-shadow: none;
+    border: 0;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border: 0;
+}
+.faq-label {
+    font-weight: 300;
+    color: #999;
+    padding-right: 10px;
+}
+#contactData a {
+    display: none;
+    color: #666;
+}
+#contactData a span {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0;
+    margin-right: 5px;
+}
 /* Responsive fixes */
 /* Large desktops and laptops */
 @media (min-width: 1200px) {

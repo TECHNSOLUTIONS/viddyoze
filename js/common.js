@@ -29,6 +29,15 @@ $(document).ready(function() {
     });
     setupLabel();
 
+
+    $('#revealMe').click(function() {
+        var emailAddress = 'mailto:support@viddyoze.com'
+
+        $('#contactData a').fadeIn(50).attr('href', emailAddress);
+
+        return false;
+    })
+
 });
 
 
